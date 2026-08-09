@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FJL Móveis e Transportes SP LTDA | Soluções em Transporte e Mobiliário</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="FJL Móveis e Transportes SP LTDA. Serviços especializados em transporte, logística e soluções em mobiliário em São Paulo e região. Entre em contato!">
+    <meta name="keywords" content="FJL Moveis, Transporte de Moveis, Frete São Paulo, Logistica de Mobiliario, FJL Transportes">
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #0F172A; /* Azul Escuro Corporativo */
+            --accent-color: #D97706;  /* Dourado / Âmbar */
+            --secondary-color: #1E293B; /* Grafite */
+            --light-bg: #F8FAFC;
+            --text-color: #334155;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Top Bar Info */
+        .top-bar {
+            background-color: var(--primary-color);
+            color: #94A3B8;
+            font-size: 0.875rem;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .top-bar a {
+            color: #E2E8F0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .top-bar a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Navbar Custom */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            padding: 18px 0;
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .navbar-brand span {
+            color: var(--accent-color);
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-left: 15px;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.9) 100%), 
+                        url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            color: #ffffff;
+            padding: 120px 0 100px 0;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            color: #CBD5E1;
+        }
+
+        .btn-custom-primary {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            font-weight: 600;
+            padding: 14px 32px;
+            border-radius: 6px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom-primary:hover {
+            background-color: #B45309;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .btn-custom-outline {
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom-outline:hover {
+            background-color: #ffffff;
+            color: var(--primary-color);
+        }
+
+        /* Services Cards */
+        .service-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 40px 30px;
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border-color: var(--accent-color);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(217, 119, 6, 0.1);
+            color: var(--accent-color);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+
+        /* Institutional Details */
+        .badge-status {
+            background-color: #10B981;
+            color: #ffffff;
+            font-size: 0.8rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .info-box {
+            background-color: var(--light-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #94A3B8;
+            padding: 60px 0 20px 0;
+        }
+
+        footer h5 {
+            color: #ffffff;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        footer a {
+            color: #94A3B8;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--accent-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            margin-top: 40px;
+            font-size: 0.875rem;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fa-solid fa-location-dot me-2"></i> Vila Nilo, São Paulo - SP | CEP: 02279-000
+            </div>
+            <div>
+                <a href="tel:35998968441" class="me-4"><i class="fa-solid fa-phone me-2"></i> (35) 99896-8441</a>
+                <a href="mailto:mesasbares@outlook.com"><i class="fa-solid fa-envelope me-2"></i> mesasbares@outlook.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                FJL <span>MÓVEIS & TRANSPORTES</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#empresa">A Empresa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="https://wa.me/5535998968441" target="_blank" class="btn btn-custom-primary btn-sm">
+                            <i class="fa-brands fa-whatsapp me-2"></i> Fazer Cotação
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <span class="badge bg-warning text-dark mb-3 px-3 py-2 fw-bold">EFICIÊNCIA & SEGURANÇA</span>
+                    <h1 class="mb-4">Soluções Completas em Logística, Transportes e Mobiliário</h1>
+                    <p class="mb-5">A FJL Móveis e Transportes SP oferece pontualidade, cuidado e excelência operacional na movimentação de móveis e mercadorias em toda a região de São Paulo e país.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="https://wa.me/5535998968441" target="_blank" class="btn btn-custom-primary">Solicitar Orçamento</a>
+                        <a href="#servicos" class="btn btn-custom-outline">Conhecer Serviços</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Principais -->
+    <section id="servicos" class="py-5 my-5">
+        <div class="container">
+            <div class="text-center max-width-700 mx-auto mb-5">
+                <h6 class="text-uppercase text-warning fw-bold">O Que Fazemos</h6>
+                <h2 class="fw-bold text-dark">Nossos Principais Serviços</h2>
+                <p class="text-muted">Atendemos clientes corporativos e residenciais com soluções personalizadas de transporte e logísticas de móveis.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Serviço 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-truck-ramp-box"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Transporte de Mobiliário</h4>
+                        <p class="text-muted">Especializados no transporte seguro de móveis residenciais e corporativos. Veículos adaptados e equipe treinada para evitar danos.</p>
+                    </div>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-chair"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Móveis para Bares e Restaurantes</h4>
+                        <p class="text-muted">Logística e fornecimento especializado em mesas, cadeiras e estruturas para estabelecimentos comerciais e eventos.</p>
+                    </div>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-boxes-packing"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Mudanças Comerciais</h4>
+                        <p class="text-muted">Planejamento e execução de mudanças para escritórios, lojas e empresas com agilidade para não parar sua operação.</p>
+                    </div>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-route"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Fretes Regionais e Intermunicipais</h4>
+                        <p class="text-muted">Coletas e entregas pontuais com rastreamento, abrangendo a Grande São Paulo e municípios adjacentes com flexibilidade.</p>
+                    </div>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-dolly"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Carga e Descarga Técnica</h4>
+                        <p class="text-muted">Equipe de manuseio especializada para montagem, desmontagem e movimentação de cargas pesadas ou delicadas.</p>
+                    </div>
+                </div>
+
+                <!-- Serviço 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-warehouse"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Apoio Logístico</h4>
+                        <p class="text-muted">Soluções personalizadas de armazenagem temporária e distribuição de itens de mobiliário para parceiros de negócios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Empresa & Informações Cadastrais -->
+    <section id="empresa" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h6 class="text-uppercase text-warning fw-bold">Transparência e Confiança</h6>
+                    <h2 class="fw-bold mb-4">Sobre a FJL Móveis e Transportes SP</h2>
+                    <p class="text-muted mb-4">Atuamos no mercado com o compromisso de entregar excelência em soluções logísticas e no setor de móveis. Nossa empresa é devidamente registrada e opera sob rigorosos padrões de qualidade e prazos.</p>
+                    
+                    <div class="info-box mb-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <h5 class="fw-bold mb-0 me-3">Situação Cadastral</h5>
+                            <span class="badge-status"><i class="fa-solid fa-check me-1"></i> ATIVA</span>
+                        </div>
+                        <p class="mb-0 text-muted small">Cadastrada sob o CNPJ 57.165.137/0001-13 com opção pelo Simples Nacional.</p>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="p-3 bg-white rounded shadow-sm">
+                                <span class="d-block text-muted fs-7">Inscrição Estadual</span>
+                                <strong class="text-dark">150.754.213.112</strong>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 bg-white rounded shadow-sm">
+                                <span class="d-block text-muted fs-7">Porte Empresarial</span>
+                                <strong class="text-dark">Micro Empresa (ME)</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg p-4">
+                        <h4 class="fw-bold mb-4 text-dark border-bottom pb-2">Dados Corporativos Oficializados</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
+                                <span class="text-muted">Razão Social:</span>
+                                <strong>Fjl Moveis e Transportes Sp LTDA</strong>
+                            </li>
+                            <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
+                                <span class="text-muted">Nome Fantasia:</span>
+                                <strong>Fjl Moveis e Transportes Sp</strong>
+                            </li>
+                            <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
+                                <span class="text-muted">CNPJ:</span>
+                                <strong>57.165.137/0001-13</strong>
+                            </li>
+                            <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
+                                <span class="text-muted">Data de Abertura:</span>
+                                <strong>05/09/2024</strong>
+                            </li>
+                            <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
+                                <span class="text-muted">Natureza Jurídica:</span>
+                                <strong>Sociedade Empresária Limitada</strong>
+                            </li>
+                            <li class="mb-0 d-flex justify-content-between">
+                                <span class="text-muted">Capital Social:</span>
+                                <strong class="text-success">R$ 40.000,00</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="bg-dark text-white p-5 rounded-3 h-100">
+                        <h3 class="fw-bold mb-4">Entre em Contato</h3>
+                        <p class="text-muted mb-4">Estamos prontos para atender você ou sua empresa com rapidez e eficiência. Ligue ou envie uma mensagem!</p>
+                        
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="fs-4 text-warning me-3"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <span class="d-block text-muted small">Atendimento Direto</span>
+                                <a href="tel:35998968441" class="text-white fw-bold text-decoration-none">(35) 99896-8441</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="fs-4 text-warning me-3"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <span class="d-block text-muted small">E-mail Comercial</span>
+                                <a href="mailto:mesasbares@outlook.com" class="text-white fw-bold text-decoration-none">mesasbares@outlook.com</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <div class="fs-4 text-warning me-3"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <span class="d-block text-muted small">Endereço Principal</span>
+                                <span class="text-white">Rua Abilio Pedro Ramos, 898 - Vila Nilo<br>São Paulo - SP, 02279-000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="p-5 border rounded-3 bg-white">
+                        <h3 class="fw-bold mb-3">Envie uma Mensagem</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Seu Nome</label>
+                                    <input type="text" class="form-control" placeholder="Nome completo" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Telefone / WhatsApp</label>
+                                    <input type="tel" class="form-control" placeholder="(00) 00000-0000" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Serviço de Interesse</label>
+                                    <select class="form-select">
+                                        <option selected>Selecione uma opção...</option>
+                                        <option>Transporte de Mobiliário</option>
+                                        <option>Móveis para Bares e Restaurantes</option>
+                                        <option>Mudança Comercial</option>
+                                        <option>Frete e Entregas</option>
+                                        <option>Outros</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Mensagem</label>
+                                    <textarea class="form-control" rows="4" placeholder="Descreva sua necessidade..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-custom-primary w-100">Enviar Solicitação</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <h5 class="text-white">FJL Móveis e Transportes SP</h5>
+                    <p class="small">Empresa atuante no ramo de transporte rodoviário de cargas e soluções para móveis. Dedicação, integridade e eficiência do carregamento à entrega final.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#inicio">Início</a></li>
+                        <li class="mb-2"><a href="#servicos">Nossos Serviços</a></li>
+                        <li class="mb-2"><a href="#empresa">Dados da Empresa</a></li>
+                        <li class="mb-2"><a href="#contato">Fale Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Endereço para Correspondência</h5>
+                    <p class="small mb-1">Fjl Moveis e Transportes Sp LTDA</p>
+                    <p class="small mb-1">Rua Abilio Pedro Ramos, 898 - Vila Nilo</p>
+                    <p class="small mb-0">São Paulo / SP - CEP: 02279-000</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom text-center">
+                <p class="mb-0">&copy; 2024 FJL Móveis e Transportes SP LTDA. Todos os direitos reservados. CNPJ: 57.165.137/0001-13</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5535998968441" class="whatsapp-float" target="_blank" title="Falar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
