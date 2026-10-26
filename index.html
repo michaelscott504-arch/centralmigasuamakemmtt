@@ -1,593 +1,555 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head> <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18373442965"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18373442965');
-</script>
-
-  <!-- Event snippet for Visualização de página (1) conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18373442965/tUkOCL3E5d4cEJX7kblE',
-      'value': 1.0,
-      'currency': 'BRL'
-  });
-</script>
-
-  <!-- Event snippet for Visualização de página (1) conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18373442965/tUkOCL3E5d4cEJX7kblE',
-      'value': 1.0,
-      'currency': 'BRL',
-      'event_callback': callback
-  });
-  return false;
+<html lang="pt-BR" style="scroll-behavior: smooth;">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mesas&amp;bares — portal editorial independente sobre móveis, eletrodomésticos e a casa em dia</title>
+<meta name="description" content="Portal editorial independente sobre móveis, eletrodomésticos, artigos de uso doméstico e mudanças. Publicação mantida por empresa privada, CNPJ 57.165.137/0001-13, com finalidade somente editorial e informativa.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23050505'/%3E%3Cpath d='M32 8 L56 32 L32 56 L8 32 Z' fill='none' stroke='%23D4AF37' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23D4AF37'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#050505; --surface:#111111; --elev:#1A1A1A;
+  --gold:#D4AF37; --gold-hover:#E6C553; --gold-dim:rgba(212,175,55,.35);
+  --text:#F5F5F5; --muted:#A3A3A3; --faint:#6b6b6b; --border:#222222;
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Manrope",system-ui,sans-serif;
 }
-</script>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:clip}
+.ficha,.foot-legal,.dados dd{overflow-wrap:anywhere;min-width:0}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--gold);color:#050505}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,92vw);margin:0 auto}
+section{scroll-margin-top:96px}
 
+/* ---------- faixa legal ---------- */
+.faixa{background:#0c0a05;border-bottom:1px solid var(--border);font-size:12px;color:var(--muted);padding:10px 0;letter-spacing:.01em}
+.faixa .wrap{display:flex;gap:12px;align-items:flex-start}
+.faixa .sinal{flex:0 0 auto;width:18px;height:18px;border:1px solid var(--gold);color:var(--gold);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;margin-top:2px}
+.faixa strong{color:var(--gold);font-weight:600}
 
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FJL Móveis e Transportes SP LTDA | Soluções em Transporte e Mobiliário</title>
-    
-    <!-- Meta Tags SEO -->
-    <meta name="description" content="FJL Móveis e Transportes SP LTDA. Serviços especializados em transporte, logística e soluções em mobiliário em São Paulo e região. Entre em contato!">
-    <meta name="keywords" content="FJL Moveis, Transporte de Moveis, Frete São Paulo, Logistica de Mobiliario, FJL Transportes">
-    
-    <!-- Google Fonts & FontAwesome Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:60;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(5,5,5,.78);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{flex:0 0 auto}
+.brand .nome{font-family:var(--serif);font-size:22px;font-weight:500;letter-spacing:.02em;line-height:1}
+.brand .nome em{font-style:italic;color:var(--gold)}
+.brand small{display:block;font-family:var(--sans);font-size:9px;letter-spacing:.32em;text-transform:uppercase;color:var(--faint);margin-top:4px}
+.menu{display:flex;gap:28px;align-items:center}
+.menu a{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);transition:color .3s ease;position:relative}
+.menu a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--gold);transition:width .35s ease}
+.menu a:hover{color:var(--text)}
+.menu a:hover::after{width:100%}
+.menu .cta{border:1px solid var(--gold-dim);padding:9px 18px;border-radius:999px;color:var(--gold);transition:border-color .3s ease,color .3s ease,background-color .3s ease}
+.menu .cta::after{display:none}
+.menu .cta:hover{border-color:var(--gold);color:#050505;background:var(--gold)}
+@media(max-width:920px){.menu a:not(.cta){display:none}}
 
-    <style>
-        :root {
-            --primary-color: #0F172A; /* Azul Escuro Corporativo */
-            --accent-color: #D97706;  /* Dourado / Âmbar */
-            --secondary-color: #1E293B; /* Grafite */
-            --light-bg: #F8FAFC;
-            --text-color: #334155;
-        }
+/* ---------- hero ---------- */
+.hero{position:relative;padding:120px 0 0;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(ellipse 60% 40% at 70% 0%,rgba(212,175,55,.06),transparent 60%);pointer-events:none}
+.eyebrow{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);font-weight:600;display:flex;align-items:center;gap:14px}
+.eyebrow::before{content:"";width:38px;height:1px;background:var(--gold-dim)}
+.h1{font-family:var(--serif);font-weight:300;font-size:clamp(2.9rem,7.2vw,6.2rem);line-height:1.02;letter-spacing:-.015em;margin:34px 0 0}
+.h1 .ln{display:block;overflow:hidden}
+.h1 .ln>span{display:block;transform:translateY(112%);animation:rise 1.1s cubic-bezier(.19,1,.22,1) forwards}
+@keyframes rise{to{transform:translateY(0)}}
+.h1 em{font-style:italic;color:var(--gold)}
+.hero-sub{max-width:640px;color:var(--muted);font-size:17px;margin-top:36px}
+.hero-acoes{display:flex;gap:18px;align-items:center;margin-top:44px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--gold);color:#050505;font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:17px 30px;border-radius:999px;transition:background-color .3s ease,transform .3s ease}
+.btn:hover{background:var(--gold-hover);transform:translateY(-2px)}
+.btn .ar{transition:transform .3s ease}
+.btn:hover .ar{transform:translateY(3px)}
+.btn2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--border);padding-bottom:4px;transition:color .3s ease,border-color .3s ease}
+.btn2:hover{color:var(--gold);border-color:var(--gold)}
+.stage{margin-top:100px;position:relative}
+.paisagem{position:relative;overflow:hidden;border:1px solid var(--border);border-bottom:none;border-radius:6px 6px 0 0;height:min(64vh,620px)}
+.paisagem img{width:100%;height:130%;object-fit:cover;filter:saturate(.82) brightness(.72);will-change:transform}
+.paisagem::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,5,5,.28),rgba(5,5,5,0) 40%,rgba(5,5,5,.55));pointer-events:none}
+.cap{position:absolute;left:24px;bottom:20px;z-index:2;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:rgba(245,245,245,.85);display:flex;align-items:center;gap:10px}
+.cap::before{content:"";width:8px;height:8px;background:var(--gold);border-radius:50%}
 
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--text-color);
-            background-color: #ffffff;
-            overflow-x: hidden;
-        }
+/* ---------- marquee ---------- */
+.marquee{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:#0a0a0a;overflow:hidden;padding:22px 0}
+.marquee .track{display:flex;width:max-content;animation:mq 46s linear infinite}
+.marquee span{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(20px,2.6vw,30px);color:#8f8570;white-space:nowrap;padding-right:12px}
+.marquee i{color:var(--gold);font-style:normal;padding:0 12px}
+@keyframes mq{to{transform:translateX(-50%)}}
 
-        /* Top Bar Info */
-        .top-bar {
-            background-color: var(--primary-color);
-            color: #94A3B8;
-            font-size: 0.875rem;
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
+/* ---------- seções ---------- */
+.sec{padding:130px 0}
+.h2{font-family:var(--serif);font-weight:300;font-size:clamp(2rem,4.4vw,3.6rem);line-height:1.08;letter-spacing:-.01em}
+.h2 em{font-style:italic;color:var(--gold)}
+.intro{color:var(--muted);max-width:520px;font-size:16px}
+.temas-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap;margin-bottom:70px}
+.pauta{list-style:none;counter-reset:tema}
+.pauta li{display:grid;grid-template-columns:120px 1fr 1.4fr;gap:34px;align-items:baseline;padding:44px 10px;border-top:1px solid var(--border);transition:background-color .4s ease,padding-left .4s ease}
+.pauta li:last-child{border-bottom:1px solid var(--border)}
+.pauta li:hover{background:#0b0b09;padding-left:26px}
+.marco{font-family:var(--serif);font-style:italic;font-size:44px;color:var(--gold-dim);font-weight:300;line-height:1;transition:color .4s ease}
+.pauta li:hover .marco{color:var(--gold)}
+.pauta h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.4rem,2.2vw,1.9rem);line-height:1.15}
+.pauta p{color:var(--muted);font-size:15px}
+@media(max-width:860px){.pauta li{grid-template-columns:64px 1fr;gap:20px}.pauta p{grid-column:2}}
 
-        .top-bar a {
-            color: #E2E8F0;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
+/* ---------- checklist ---------- */
+.check{padding:40px 0 130px}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:clamp(34px,6vw,72px);position:relative;overflow:hidden}
+.panel::before{content:"";position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim),transparent)}
+.check-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(40px,6vw,90px)}
+@media(max-width:920px){.check-grid{grid-template-columns:1fr}}
+.contador{font-family:var(--serif);font-weight:300;font-size:clamp(3.4rem,6vw,5.4rem);line-height:1;margin-top:44px;color:var(--text)}
+.contador small{font-size:.4em;color:var(--faint)}
+.barra{height:2px;background:var(--border);margin-top:20px;max-width:280px}
+.barra i{display:block;height:100%;width:0;background:var(--gold);transition:width .5s cubic-bezier(.19,1,.22,1)}
+.conferir{list-style:none;display:flex;flex-direction:column}
+.conferir li{border-bottom:1px solid var(--border)}
+.conferir label{display:flex;gap:18px;align-items:flex-start;padding:20px 6px;cursor:pointer}
+.conferir input{appearance:none;flex:0 0 auto;width:20px;height:20px;border:1px solid var(--faint);border-radius:2px;margin-top:3px;cursor:pointer;position:relative;transition:border-color .3s ease,background-color .3s ease}
+.conferir input:checked{border-color:var(--gold);background:var(--gold)}
+.conferir input:checked::after{content:"";position:absolute;inset:4px;background:#050505;clip-path:polygon(14% 44%,0 65%,50% 100%,100% 16%,80% 0%,43% 62%)}
+.conferir .tira{font-size:15px;color:var(--muted);transition:color .3s ease}
+.conferir input:checked~.tira{color:var(--text)}
+.fecho{margin-top:26px;font-size:14px;color:var(--faint);font-style:italic;font-family:var(--serif);font-size:17px}
 
-        .top-bar a:hover {
-            color: var(--accent-color);
-        }
+/* ---------- dúvidas ---------- */
+.faq-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(40px,6vw,100px);align-items:start}
+@media(max-width:920px){.faq-grid{grid-template-columns:1fr}}
+.sticky{position:sticky;top:130px}
+@media(max-width:920px){.sticky{position:static}}
+.perguntas details{border-top:1px solid var(--border)}
+.perguntas details:last-child{border-bottom:1px solid var(--border)}
+.perguntas summary{list-style:none;cursor:pointer;display:flex;gap:22px;align-items:baseline;padding:28px 8px;font-family:var(--serif);font-weight:400;font-size:clamp(1.15rem,1.8vw,1.5rem);line-height:1.3;transition:color .3s ease,padding-left .3s ease}
+.perguntas summary::-webkit-details-marker{display:none}
+.perguntas summary:hover{color:var(--gold);padding-left:16px}
+.pn{font-family:var(--sans);font-size:11px;letter-spacing:.2em;color:var(--gold);font-weight:600;flex:0 0 auto}
+.perguntas details p{color:var(--muted);font-size:15px;padding:0 8px 30px 64px;max-width:640px}
 
-        /* Navbar Custom */
-        .navbar {
-            background-color: #ffffff;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            padding: 18px 0;
-        }
+/* ---------- sobre ---------- */
+.sobre{background:#0a0a0a;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.quem-grade{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(44px,6vw,100px);align-items:center}
+@media(max-width:920px){.quem-grade{grid-template-columns:1fr}}
+.quem-foto .frame{overflow:hidden;border:1px solid var(--border);border-radius:6px;height:520px;position:relative}
+.quem-foto img{width:100%;height:124%;object-fit:cover;filter:saturate(.8) brightness(.7);will-change:transform}
+.quem-foto figcaption{margin-top:16px;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--faint)}
+.quem-txt p{color:var(--muted);font-size:16px;margin-top:22px}
+.quem-txt p.lead{color:var(--text);font-size:19px;font-family:var(--serif);font-weight:300;line-height:1.55}
+.quem-txt strong{color:var(--text);font-weight:600}
+.dados{margin-top:34px;border:1px solid var(--border);border-radius:6px;background:var(--surface)}
+.dados div{display:flex;justify-content:space-between;gap:20px;padding:15px 22px;border-bottom:1px solid var(--border);font-size:14px;flex-wrap:wrap}
+.dados div:last-child{border-bottom:none}
+.dados dt{color:var(--faint);letter-spacing:.14em;text-transform:uppercase;font-size:11px;font-weight:600;margin:0}
+.dados dd{margin:0;color:var(--text);text-align:right}
 
-        .navbar-brand {
-            font-weight: 800;
-            font-size: 1.5rem;
-            color: var(--primary-color);
-        }
+/* ---------- leituras / bento ---------- */
+.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:64px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .4s ease,transform .4s ease}
+.card:hover{border-color:rgba(212,175,55,.35);transform:translateY(-5px)}
+.card.grande{grid-column:span 2}
+@media(max-width:920px){.bento{grid-template-columns:1fr}.card.grande{grid-column:span 1}}
+.card .ph{height:250px;overflow:hidden;position:relative}
+.card.grande .ph{height:340px}
+.card .ph img{width:100%;height:100%;object-fit:cover;filter:saturate(.8) brightness(.66);transition:transform 1.2s cubic-bezier(.19,1,.22,1)}
+.card:hover .ph img{transform:scale(1.05)}
+.card .corpo{padding:30px 30px 34px;display:flex;flex-direction:column;gap:16px;flex:1}
+.card h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.3rem,1.9vw,1.7rem);line-height:1.2}
+.card h3 a{transition:color .3s ease}
+.card:hover h3 a{color:var(--gold)}
+.card .corpo p{color:var(--muted);font-size:14.5px}
+.seguir{margin-top:auto;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:10px;font-weight:600}
+.seguir::after{content:"→";transition:transform .3s ease}
+.seguir:hover::after{transform:translateX(6px)}
+.nota-leit{margin-top:44px;color:var(--faint);font-size:15px;font-family:var(--serif);font-style:italic;font-size:18px}
+.nota-leit a{color:var(--gold);border-bottom:1px solid var(--gold-dim)}
 
-        .navbar-brand span {
-            color: var(--accent-color);
-        }
+/* ---------- políticas / termos ---------- */
+.legal-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:64px}
+@media(max-width:920px){.legal-grid{grid-template-columns:1fr}}
+.legal{min-width:0;overflow-wrap:anywhere;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:clamp(30px,4vw,50px)}
+.legal h3{font-family:var(--serif);font-weight:400;font-size:1.8rem;margin-bottom:6px}
+.legal h4{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:30px 0 10px}
+.legal p,.legal li{color:var(--muted);font-size:14.5px}
+.legal ul{list-style:none;margin-top:6px}
+.legal li{padding-left:20px;position:relative;margin-top:10px}
+.legal li::before{content:"";position:absolute;left:0;top:11px;width:7px;height:1px;background:var(--gold)}
+.legal a{color:var(--gold);border-bottom:1px solid var(--gold-dim)}
 
-        .nav-link {
-            font-weight: 600;
-            color: var(--secondary-color);
-            margin-left: 15px;
-        }
+/* ---------- contato ---------- */
+.contatos{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:64px}
+@media(max-width:1100px){.contatos{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.contatos{grid-template-columns:1fr}}
+.ficha{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:32px 28px;transition:border-color .4s ease,transform .4s ease}
+.ficha:hover{border-color:rgba(212,175,55,.35);transform:translateY(-4px)}
+.ficha h3{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px}
+.ficha p{font-size:15px;color:var(--muted);line-height:1.65}
+.ficha a{color:var(--text);border-bottom:1px solid var(--gold-dim);transition:color .3s ease}
+.ficha a:hover{color:var(--gold)}
+.sem-form{grid-column:1/-1;border:1px dashed rgba(212,175,55,.3);border-radius:6px;padding:28px 32px}
+.sem-form p{color:var(--muted);font-size:15px;font-family:var(--serif);font-style:italic;font-size:17px;max-width:900px}
 
-        .nav-link:hover {
-            color: var(--accent-color);
-        }
+/* ---------- rodapé ---------- */
+footer{border-top:1px solid var(--border);background:#070706;padding:80px 0 40px}
+.foot-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:50px;border-bottom:1px solid var(--border)}
+.foot-nav{display:flex;gap:26px;flex-wrap:wrap}
+.foot-nav a{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);transition:color .3s ease}
+.foot-nav a:hover{color:var(--gold)}
+.foot-legal{padding-top:40px;color:var(--faint);font-size:12.5px;line-height:1.8;max-width:1000px}
+.foot-legal strong{color:var(--gold);font-weight:600}
+.copy{margin-top:26px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:#4c4c4c;font-size:12px;letter-spacing:.06em}
 
-        /* Hero Section */
-        .hero-section {
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.9) 100%), 
-                        url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-            color: #ffffff;
-            padding: 120px 0 100px 0;
-        }
+/* ---------- aviso cookies ---------- */
+.aviso-chk{position:fixed;opacity:0;pointer-events:none}
+.aviso{position:fixed;left:20px;bottom:20px;z-index:80;max-width:420px;background:rgba(17,17,17,.94);border:1px solid var(--border);border-radius:6px;padding:24px 26px;transition:opacity .5s ease,transform .5s ease,visibility .5s}
+.aviso p{font-size:13.5px;color:var(--muted)}
+.aviso a{color:var(--gold);border-bottom:1px solid var(--gold-dim)}
+.aviso label{display:inline-block;margin-top:16px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--gold);border:1px solid var(--gold-dim);border-radius:999px;padding:9px 20px;cursor:pointer;transition:background-color .3s ease,color .3s ease}
+.aviso label:hover{background:var(--gold);color:#050505}
+.aviso-chk:checked~.aviso{opacity:0;transform:translateY(16px);visibility:hidden}
 
-        .hero-section h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            line-height: 1.2;
-        }
-
-        .hero-section p {
-            font-size: 1.2rem;
-            color: #CBD5E1;
-        }
-
-        .btn-custom-primary {
-            background-color: var(--accent-color);
-            color: #ffffff;
-            font-weight: 600;
-            padding: 14px 32px;
-            border-radius: 6px;
-            border: none;
-            transition: all 0.3s ease;
-        }
-
-        .btn-custom-primary:hover {
-            background-color: #B45309;
-            color: #ffffff;
-            transform: translateY(-2px);
-        }
-
-        .btn-custom-outline {
-            border: 2px solid #ffffff;
-            color: #ffffff;
-            font-weight: 600;
-            padding: 12px 30px;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-custom-outline:hover {
-            background-color: #ffffff;
-            color: var(--primary-color);
-        }
-
-        /* Services Cards */
-        .service-card {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 40px 30px;
-            border: 1px solid #E2E8F0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-            transition: all 0.3s ease;
-            height: 100%;
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-            border-color: var(--accent-color);
-        }
-
-        .service-icon {
-            width: 70px;
-            height: 70px;
-            background-color: rgba(217, 119, 6, 0.1);
-            color: var(--accent-color);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            margin-bottom: 25px;
-        }
-
-        /* Institutional Details */
-        .badge-status {
-            background-color: #10B981;
-            color: #ffffff;
-            font-size: 0.8rem;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-weight: 600;
-        }
-
-        .info-box {
-            background-color: var(--light-bg);
-            border-left: 4px solid var(--accent-color);
-            padding: 20px;
-            border-radius: 0 8px 8px 0;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--primary-color);
-            color: #94A3B8;
-            padding: 60px 0 20px 0;
-        }
-
-        footer h5 {
-            color: #ffffff;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        footer a {
-            color: #94A3B8;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: var(--accent-color);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 20px;
-            margin-top: 40px;
-            font-size: 0.875rem;
-        }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            color: #FFF;
-        }
-    </style>
+/* ---------- reveal ---------- */
+.rv{opacity:0}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1}.h1 .ln>span{animation:none;transform:none}.marquee .track{animation:none}}
+</style>
 </head>
 <body>
 
-    <!-- Top Info Bar -->
-    <div class="top-bar d-none d-md-block">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div>
-                <i class="fa-solid fa-location-dot me-2"></i> Vila Nilo, São Paulo - SP | CEP: 02279-000
-            </div>
-            <div>
-                <a href="tel:35998968441" class="me-4"><i class="fa-solid fa-phone me-2"></i> (35) 99896-8441</a>
-                <a href="mailto:mesasbares@outlook.com"><i class="fa-solid fa-envelope me-2"></i> mesasbares@outlook.com</a>
-            </div>
-        </div>
-    </div>
+<!-- ============ AVISO LEGAL — TOPO ============ -->
+<div class="faixa" data-testid="aviso-legal-topo">
+  <div class="wrap">
+    <span class="sinal" aria-hidden="true">!</span>
+    <p><strong>CNPJ 57.165.137/0001-13.</strong> Publicação mantida por empresa privada de representação comercial de eletrodomésticos, móveis e artigos de uso doméstico (CNAE 46.15-0-00), com finalidade somente editorial e informativa. Nada neste portal vende móvel ou eletrodoméstico, emite orçamento, agenda entrega ou mudança, nem intermedeia negócio com terceiros.</p>
+  </div>
+</div>
 
-    <!-- Navigation Header -->
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                FJL <span>MÓVEIS & TRANSPORTES</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#empresa">A Empresa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a href="https://wa.me/5535998968441" target="_blank" class="btn btn-custom-primary btn-sm">
-                            <i class="fa-brands fa-whatsapp me-2"></i> Fazer Cotação
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="inicio" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <span class="badge bg-warning text-dark mb-3 px-3 py-2 fw-bold">EFICIÊNCIA & SEGURANÇA</span>
-                    <h1 class="mb-4">Soluções Completas em Logística, Transportes e Mobiliário</h1>
-                    <p class="mb-5">A FJL Móveis e Transportes SP oferece pontualidade, cuidado e excelência operacional na movimentação de móveis e mercadorias em toda a região de São Paulo e país.</p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="https://wa.me/5535998968441" target="_blank" class="btn btn-custom-primary">Solicitar Orçamento</a>
-                        <a href="#servicos" class="btn btn-custom-outline">Conhecer Serviços</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Serviços Principais -->
-    <section id="servicos" class="py-5 my-5">
-        <div class="container">
-            <div class="text-center max-width-700 mx-auto mb-5">
-                <h6 class="text-uppercase text-warning fw-bold">O Que Fazemos</h6>
-                <h2 class="fw-bold text-dark">Nossos Principais Serviços</h2>
-                <p class="text-muted">Atendemos clientes corporativos e residenciais com soluções personalizadas de transporte e logísticas de móveis.</p>
-            </div>
-
-            <div class="row g-4">
-                <!-- Serviço 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-truck-ramp-box"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">Transporte de Mobiliário</h4>
-                        <p class="text-muted">Especializados no transporte seguro de móveis residenciais e corporativos. Veículos adaptados e equipe treinada para evitar danos.</p>
-                    </div>
-                </div>
-
-                <!-- Serviço 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-chair"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">Móveis para Bares e Restaurantes</h4>
-                        <p class="text-muted">Logística e fornecimento especializado em mesas, cadeiras e estruturas para estabelecimentos comerciais e eventos.</p>
-                    </div>
-                </div>
-
-                <!-- Serviço 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-boxes-packing"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">Mudanças Comerciais</h4>
-                        <p class="text-muted">Planejamento e execução de mudanças para escritórios, lojas e empresas com agilidade para não parar sua operação.</p>
-                    </div>
-                </div>
-
-                <!-- Serviço 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-route"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">Fretes Regionais e Intermunicipais</h4>
-                        <p class="text-muted">Coletas e entregas pontuais com rastreamento, abrangendo a Grande São Paulo e municípios adjacentes com flexibilidade.</p>
-                    </div>
-                </div>
-
-                <!-- Serviço 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-dolly"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">Carga e Descarga Técnica</h4>
-                        <p class="text-muted">Equipe de manuseio especializada para montagem, desmontagem e movimentação de cargas pesadas ou delicadas.</p>
-                    </div>
-                </div>
-
-                <!-- Serviço 6 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-warehouse"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">Apoio Logístico</h4>
-                        <p class="text-muted">Soluções personalizadas de armazenagem temporária e distribuição de itens de mobiliário para parceiros de negócios.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sobre a Empresa & Informações Cadastrais -->
-    <section id="empresa" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <h6 class="text-uppercase text-warning fw-bold">Transparência e Confiança</h6>
-                    <h2 class="fw-bold mb-4">Sobre a FJL Móveis e Transportes SP</h2>
-                    <p class="text-muted mb-4">Atuamos no mercado com o compromisso de entregar excelência em soluções logísticas e no setor de móveis. Nossa empresa é devidamente registrada e opera sob rigorosos padrões de qualidade e prazos.</p>
-                    
-                    <div class="info-box mb-4">
-                        <div class="d-flex align-items-center mb-2">
-                            <h5 class="fw-bold mb-0 me-3">Situação Cadastral</h5>
-                            <span class="badge-status"><i class="fa-solid fa-check me-1"></i> ATIVA</span>
-                        </div>
-                        <p class="mb-0 text-muted small">Cadastrada sob o CNPJ 57.165.137/0001-13 com opção pelo Simples Nacional.</p>
-                    </div>
-
-                    <div class="row g-3">
-                        <div class="col-6">
-                            <div class="p-3 bg-white rounded shadow-sm">
-                                <span class="d-block text-muted fs-7">Inscrição Estadual</span>
-                                <strong class="text-dark">150.754.213.112</strong>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="p-3 bg-white rounded shadow-sm">
-                                <span class="d-block text-muted fs-7">Porte Empresarial</span>
-                                <strong class="text-dark">Micro Empresa (ME)</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="card border-0 shadow-lg p-4">
-                        <h4 class="fw-bold mb-4 text-dark border-bottom pb-2">Dados Corporativos Oficializados</h4>
-                        <ul class="list-unstyled">
-                            <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
-                                <span class="text-muted">Razão Social:</span>
-                                <strong>Fjl Moveis e Transportes Sp LTDA</strong>
-                            </li>
-                            <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
-                                <span class="text-muted">Nome Fantasia:</span>
-                                <strong>Fjl Moveis e Transportes Sp</strong>
-                            </li>
-                            <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
-                                <span class="text-muted">CNPJ:</span>
-                                <strong>57.165.137/0001-13</strong>
-                            </li>
-                            <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
-                                <span class="text-muted">Data de Abertura:</span>
-                                <strong>05/09/2024</strong>
-                            </li>
-                            <li class="mb-3 d-flex justify-content-between border-bottom pb-2">
-                                <span class="text-muted">Natureza Jurídica:</span>
-                                <strong>Sociedade Empresária Limitada</strong>
-                            </li>
-                            <li class="mb-0 d-flex justify-content-between">
-                                <span class="text-muted">Capital Social:</span>
-                                <strong class="text-success">R$ 40.000,00</strong>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção de Contato -->
-    <section id="contato" class="py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-5">
-                    <div class="bg-dark text-white p-5 rounded-3 h-100">
-                        <h3 class="fw-bold mb-4">Entre em Contato</h3>
-                        <p class="text-muted mb-4">Estamos prontos para atender você ou sua empresa com rapidez e eficiência. Ligue ou envie uma mensagem!</p>
-                        
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="fs-4 text-warning me-3"><i class="fa-solid fa-phone"></i></div>
-                            <div>
-                                <span class="d-block text-muted small">Atendimento Direto</span>
-                                <a href="tel:35998968441" class="text-white fw-bold text-decoration-none">(35) 99896-8441</a>
-                            </div>
-                        </div>
-
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="fs-4 text-warning me-3"><i class="fa-solid fa-envelope"></i></div>
-                            <div>
-                                <span class="d-block text-muted small">E-mail Comercial</span>
-                                <a href="mailto:mesasbares@outlook.com" class="text-white fw-bold text-decoration-none">mesasbares@outlook.com</a>
-                            </div>
-                        </div>
-
-                        <div class="d-flex align-items-center">
-                            <div class="fs-4 text-warning me-3"><i class="fa-solid fa-location-dot"></i></div>
-                            <div>
-                                <span class="d-block text-muted small">Endereço Principal</span>
-                                <span class="text-white">Rua Abilio Pedro Ramos, 898 - Vila Nilo<br>São Paulo - SP, 02279-000</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-7">
-                    <div class="p-5 border rounded-3 bg-white">
-                        <h3 class="fw-bold mb-3">Envie uma Mensagem</h3>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label class="form-label">Seu Nome</label>
-                                    <input type="text" class="form-control" placeholder="Nome completo" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Telefone / WhatsApp</label>
-                                    <input type="tel" class="form-control" placeholder="(00) 00000-0000" required>
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label">E-mail</label>
-                                    <input type="email" class="form-control" placeholder="seuemail@exemplo.com" required>
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label">Serviço de Interesse</label>
-                                    <select class="form-select">
-                                        <option selected>Selecione uma opção...</option>
-                                        <option>Transporte de Mobiliário</option>
-                                        <option>Móveis para Bares e Restaurantes</option>
-                                        <option>Mudança Comercial</option>
-                                        <option>Frete e Entregas</option>
-                                        <option>Outros</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label">Mensagem</label>
-                                    <textarea class="form-control" rows="4" placeholder="Descreva sua necessidade..."></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-custom-primary w-100">Enviar Solicitação</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-5">
-                    <h5 class="text-white">FJL Móveis e Transportes SP</h5>
-                    <p class="small">Empresa atuante no ramo de transporte rodoviário de cargas e soluções para móveis. Dedicação, integridade e eficiência do carregamento à entrega final.</p>
-                </div>
-                <div class="col-lg-3">
-                    <h5>Links Rápidos</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#inicio">Início</a></li>
-                        <li class="mb-2"><a href="#servicos">Nossos Serviços</a></li>
-                        <li class="mb-2"><a href="#empresa">Dados da Empresa</a></li>
-                        <li class="mb-2"><a href="#contato">Fale Conosco</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <h5>Endereço para Correspondência</h5>
-                    <p class="small mb-1">Fjl Moveis e Transportes Sp LTDA</p>
-                    <p class="small mb-1">Rua Abilio Pedro Ramos, 898 - Vila Nilo</p>
-                    <p class="small mb-0">São Paulo / SP - CEP: 02279-000</p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom text-center">
-                <p class="mb-0">&copy; 2024 FJL Móveis e Transportes SP LTDA. Todos os direitos reservados. CNPJ: 57.165.137/0001-13</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/5535998968441" class="whatsapp-float" target="_blank" title="Falar no WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
+<!-- ============ HEADER ============ -->
+<header>
+<div class="wrap nav">
+    <a class="brand" href="#abertura" data-testid="logo-mesasbares">
+      <svg width="34" height="34" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <path d="M32 6 L58 32 L32 58 L6 32 Z" stroke="#D4AF37" stroke-width="2.5"/>
+        <path d="M32 18 L46 32 L32 46 L18 32 Z" stroke="#D4AF37" stroke-width="1" opacity=".4"/>
+        <circle cx="32" cy="32" r="4.5" fill="#D4AF37"/>
+      </svg>
+      <span>
+        <span class="nome">mesas<em>&amp;bares</em></span>
+        <small>Editorial independente</small>
+      </span>
     </a>
+    <nav class="menu" data-testid="menu-principal">
+      <a href="#temas">Temas</a>
+      <a href="#checklist">Checklist</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#leituras">Leituras</a>
+      <a class="cta" href="#contato" data-testid="menu-cta-contato">Contato</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<main>
+  <!-- ============ HERO ============ -->
+  <section id="abertura" class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Leitura independente</p>
+      <h1 class="h1" data-testid="hero-titulo">
+        <span class="ln"><span style="animation-delay:.08s">Móvel que dura,</span></span>
+        <span class="ln"><span style="animation-delay:.2s">eletrodoméstico sem erro</span></span>
+        <span class="ln"><span style="animation-delay:.32s">e mudança <em>sem dor de cabeça</em> —</span></span>
+        <span class="ln"><span style="animation-delay:.44s">explicados em um só lugar.</span></span>
+      </h1>
+      <p class="hero-sub rv" data-testid="hero-descricao">Medida do cômodo, voltagem da tomada, garantia do fabricante e o cuidado com a mudança costumam vir em informação picada. Aqui esses assuntos ficam juntos, em texto direto, para quem equipa a casa em São Paulo (SP). Quem procura loja, orçamento ou frete não encontra atendimento: o portal só publica texto.</p>
+      <div class="hero-acoes rv">
+        <a class="btn" href="#temas" data-testid="cta-ver-temas">Ler os quatro temas <span class="ar">↓</span></a>
+        <a class="btn2" href="#contato" data-testid="cta-falar-redacao">Falar com a redação</a>
+      </div>
+      <div class="stage">
+        <figure class="paisagem">
+          <img src="https://images.unsplash.com/photo-1774551351897-c64cd76a7c22?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxkYXJrJTIwbHV4dXJ5JTIwbGl2aW5nJTIwcm9vbSUyMHdvb2RlbiUyMGZ1cm5pdHVyZSUyMHdhcm0lMjBsaWdodGluZ3xlbnwwfHx8fDE3OTI5ODUzMzV8MA&ixlib=rb-4.1.0&q=85" alt="Sala de estar com móveis de madeira nobre e iluminação quente ao entardecer" width="1800" height="750" fetchpriority="high" data-par="0.14">
+          <figcaption class="cap">mesas&amp;bares · São Paulo, SP</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>São Paulo (SP) <i>·</i> Móveis que duram <i>·</i> Eletrodoméstico sem erro <i>·</i> Artigos de uso doméstico <i>·</i> Mudança sem avaria <i>·</i> Compra consciente <i>·</i>&nbsp;</span>
+      <span>São Paulo (SP) <i>·</i> Móveis que duram <i>·</i> Eletrodoméstico sem erro <i>·</i> Artigos de uso doméstico <i>·</i> Mudança sem avaria <i>·</i> Compra consciente <i>·</i>&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ============ TEMAS ============ -->
+  <section id="temas" class="sec">
+    <div class="wrap">
+      <div class="temas-head">
+        <div>
+          <p class="eyebrow rv">Temas</p>
+          <h2 class="h2 rv" style="margin-top:22px">Quatro assuntos cobrem a maior parte <em>das dúvidas</em></h2>
+        </div>
+        <p class="intro rv">Cada tema vira um artigo ou uma seção do guia, com prazo, exemplo e o limite do que um texto resolve. Nenhum bloco processa solicitação do leitor.</p>
+      </div>
+      <ol class="pauta" data-testid="lista-temas">
+        <li class="rv"><span class="marco" aria-hidden="true">01</span><h3>Móveis que duram</h3><p>MDF, MDP e madeira maciça têm preços e vidas úteis diferentes, e confundir os três é o descuido mais comum. A ferragem e o acabamento das bordas dizem mais sobre a durabilidade do que a vitrine.</p></li>
+        <li class="rv"><span class="marco" aria-hidden="true">02</span><h3>Eletrodoméstico sem arrependimento</h3><p>O selo do Procel, a voltagem da tomada e a medida do nicho valem mais do que a promoção da semana. Conferir os três antes evita a troca que ninguém quer fazer.</p></li>
+        <li class="rv"><span class="marco" aria-hidden="true">03</span><h3>Mudança sem avaria</h3><p>Desmontar o que desmonta, embalar canto e tampo e fotografar tudo antes de o caminhão fechar. Saber disso antes evita discussão na hora da entrega.</p></li>
+        <li class="rv"><span class="marco" aria-hidden="true">04</span><h3>Artigos de uso doméstico</h3><p>Panela, taça e organizador parecem compra pequena, mas material e cuidado mudam tudo: inox, ferro e vidro têm regras próprias de uso e de limpeza.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ CHECKLIST ============ -->
+  <section id="checklist" class="check">
+    <div class="wrap">
+      <div class="panel rv" data-testid="painel-checklist">
+        <div class="check-grid">
+          <div>
+            <p class="eyebrow">Checklist</p>
+            <h2 class="h2" style="margin-top:22px">Seis coisas para conferir antes de fechar <em>a compra</em></h2>
+            <p class="intro" style="color:#9d968a;margin-top:22px">Assinale o que já está resolvido. O que costuma atrapalhar a compra é medida que ficou na memória, num papel solto ou na cabeça de outra pessoa.</p>
+            <div class="contador" data-testid="contador-checklist"><span id="cnt">0</span><small> / 6</small></div>
+            <div class="barra"><i id="bar"></i></div>
+          </div>
+          <div>
+            <ul class="conferir" id="conferir">
+              <li><label><input type="checkbox" data-testid="checklist-item-1"><span class="tira">As medidas do cômodo, da porta e do elevador anotadas e conferidas com as do móvel</span></label></li>
+              <li><label><input type="checkbox" data-testid="checklist-item-2"><span class="tira">Voltagem da tomada (127V ou 220V) confirmada antes de escolher o eletrodoméstico</span></label></li>
+              <li><label><input type="checkbox" data-testid="checklist-item-3"><span class="tira">Selo Procel de eficiência energética verificado no modelo exato que vai no carrinho</span></label></li>
+              <li><label><input type="checkbox" data-testid="checklist-item-4"><span class="tira">Prazo de entrega, frete e montagem combinados por escrito antes do pagamento</span></label></li>
+              <li><label><input type="checkbox" data-testid="checklist-item-5"><span class="tira">Nota fiscal e termo de garantia do fabricante guardados juntos, em local seguro</span></label></li>
+              <li><label><input type="checkbox" data-testid="checklist-item-6"><span class="tira">Regra de troca anotada: 7 dias de arrependimento na compra online e garantia legal de 90 dias</span></label></li>
+            </ul>
+            <p class="fecho">A conversa é o primeiro passo de qualquer compra. Quem chega com os seis itens evita viagem perdida e sai sabendo o que foi decidido — e por quê.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DÚVIDAS ============ -->
+  <section id="duvidas" class="sec">
+    <div class="wrap faq-grid">
+      <div class="sticky">
+        <p class="eyebrow rv">Dúvidas</p>
+        <h2 class="h2 rv" style="margin-top:22px">Dúvidas que chegam com mais <em>frequência</em></h2>
+      </div>
+      <div class="perguntas rv" data-testid="lista-duvidas">
+        <details data-testid="faq-1"><summary><span class="pn" aria-hidden="true">P1</span>O portal vende móvel, eletrodoméstico ou agenda entrega e mudança?</summary><p>Não. Este portal só publica texto: não vende, não orça, não agenda, não cobra e não encaminha pedido a ninguém. Para compra ou frete, procure uma loja ou transportadora da sua confiança.</p></details>
+        <details data-testid="faq-2"><summary><span class="pn" aria-hidden="true">P2</span>127V ou 220V: como saber qual comprar?</summary><p>Olhe a tomada e o disjuntor antes do anúncio. Em grande parte de São Paulo a rede é 127V, e ligar aparelho 220V nela faz ele perder força; o contrário pode queimar o equipamento na hora.</p></details>
+        <details data-testid="faq-3"><summary><span class="pn" aria-hidden="true">P3</span>O conteúdo vale para quem mora no interior, longe da capital?</summary><p>Vale. Garantia e direito de troca vêm do Código de Defesa do Consumidor, iguais na capital e no interior, e madeira e ferragem não mudam com o CEP. O que varia é o prazo de entrega e a assistência autorizada mais perto.</p></details>
+        <details data-testid="faq-4"><summary><span class="pn" aria-hidden="true">P4</span>Quem assina os textos e como se corrige um erro?</summary><p>O portal indica a data de publicação de cada texto e não promete checagem que não consiga provar. Quando alguém aponta um erro, a correção entra no texto com data nova.</p></details>
+        <details data-testid="faq-5"><summary><span class="pn" aria-hidden="true">P5</span>Móvel ou eletro com defeito: quem responde, loja ou fabricante?</summary><p>Os dois. O Código de Defesa do Consumidor responsabiliza toda a cadeia, e a loja não pode empurrar o problema para a fábrica. Guarde nota fiscal e protocolo de atendimento desde o primeiro contato.</p></details>
+        <details data-testid="faq-6"><summary><span class="pn" aria-hidden="true">P6</span>Como avisar sobre um erro ou sugerir um tema?</summary><p>Escrevendo para mesasbares@outlook.com. Não há formulário, cadastro nem login. Correção confirmada entra no texto, e a data da revisão aparece no próprio artigo.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE ============ -->
+  <section id="sobre" class="sec sobre">
+    <div class="wrap quem-grade">
+      <figure class="quem-foto rv">
+        <div class="frame">
+          <img src="https://images.unsplash.com/photo-1640357897497-599b4fc84f51?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxkYXJrJTIwbHV4dXJ5JTIwaW50ZXJpb3IlMjBmdXJuaXR1cmUlMjBzaG93cm9vbSUyMGpvaW5lcnklMjB3b29kJTIwdGV4dHVyZXxlbnwwfHx8fDE3OTI5ODUzMzV8MA&ixlib=rb-4.1.0&q=85" alt="Interior elegante com móveis escuros e detalhes de marcenaria em madeira" width="1140" height="840" loading="lazy" data-par="0.08">
+        </div>
+        <figcaption>Sobre o portal</figcaption>
+      </figure>
+      <div class="quem-txt">
+        <p class="eyebrow rv">Sobre</p>
+        <h2 class="h2 rv" style="margin-top:22px">Quem mantém o portal <em>e por quê</em></h2>
+        <p class="rv lead">As dúvidas de quem equipa a casa raramente ficam explicadas num lugar só: a medida do sofá está numa página, a voltagem do forno noutra, a regra da garantia num terceiro site. A empresa decidiu manter uma publicação que reúna esses assuntos.</p>
+        <p class="rv">O portal é mantido pela <strong>Fjl Moveis e Transportes Sp</strong>, razão social <strong>Fjl Moveis e Transportes Sp LTDA</strong>, CNPJ 57.165.137/0001-13, fundada em 05/09/2024 e com situação cadastral ativa. Conforme a Receita Federal, sua atividade principal é 46.15-0-00 - Representantes comerciais e agentes do comércio de eletrodomésticos, móveis e artigos de uso doméstico. A publicação é um projeto editorial dela e não vende móvel, eletrodoméstico nem serviço de mudança.</p>
+        <p class="rv">A sede fica em São Paulo, no estado de São Paulo. O ramo cadastrado da empresa é a representação comercial de eletrodomésticos, móveis e artigos de uso doméstico — e o portal diz isso abertamente: o que dá base aos textos é o conhecimento de produto, garantia e transporte, que não muda de estado nem de ramo de negócio. Os temas apresentados aqui são voltados ao estado de São Paulo (SP).</p>
+        <p class="rv">A leitura é aberta e gratuita. O custo do portal é da própria empresa; ele não veicula anúncio, não recebe patrocínio de fabricante e não vende nada.</p>
+        <dl class="dados rv" data-testid="dados-empresa">
+          <div><dt>Mantenedora</dt><dd>Fjl Moveis e Transportes Sp LTDA</dd></div>
+          <div><dt>Nome fantasia</dt><dd>Fjl Moveis e Transportes Sp</dd></div>
+          <div><dt>CNPJ</dt><dd>57.165.137/0001-13</dd></div>
+          <div><dt>Fundação</dt><dd>05/09/2024</dd></div>
+          <div><dt>CNAE principal</dt><dd>46.15-0-00 — Representantes comerciais e agentes do comércio de eletrodomésticos, móveis e artigos de uso doméstico</dd></div>
+          <div><dt>Situação cadastral</dt><dd>Ativa</dd></div>
+          <div><dt>Sede</dt><dd>São Paulo · São Paulo</dd></div>
+          <div><dt>Conteúdo voltado a</dt><dd>São Paulo (SP)</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEITURAS ============ -->
+  <section id="leituras" class="sec">
+    <div class="wrap">
+      <p class="eyebrow rv">Leituras</p>
+      <h2 class="h2 rv" style="margin-top:22px">Últimas <em>leituras</em></h2>
+      <div class="bento" data-testid="grade-leituras">
+        <article class="card grande rv">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1525947088131-b701cd0f6dc3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxkYXJrJTIwbHV4dXJ5JTIwaW50ZXJpb3IlMjBmdXJuaXR1cmUlMjBzaG93cm9vbSUyMGpvaW5lcnklMjB3b29kJTIwdGV4dHVyZXxlbnwwfHx8fDE3OTI5ODUzMzV8MA&ixlib=rb-4.1.0&q=85" alt="Detalhe de marcenaria em madeira escura com textura aparente" width="1600" height="800" loading="lazy"></div>
+          <div class="corpo">
+            <h3><a href="#temas">MDF, MDP ou madeira maciça: o que muda na vida útil do móvel</a></h3>
+            <p>A diferença de preço entre os painéis vem da matéria-prima e da forma de prensagem, e não só da marca. Conhecer essa lógica ajuda a conversar com a loja sobre a garantia de cada peça.</p>
+            <a class="seguir" href="#temas" data-testid="leitura-1">Continuar lendo</a>
+          </div>
+        </article>
+        <article class="card rv">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1639405069836-f82aa6dcb900?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHxkYXJrJTIwbHV4dXJ5JTIwa2l0Y2hlbiUyMG1vZGVybiUyMGFwcGxpYW5jZXMlMjBnb2xkJTIwYWNjZW50c3xlbnwwfHx8fDE3OTI5ODUzMzV8MA&ixlib=rb-4.1.0&q=85" alt="Cozinha moderna escura com eletrodomésticos de embutir" width="1600" height="800" loading="lazy"></div>
+          <div class="corpo">
+            <h3><a href="#checklist">127V ou 220V: o que conferir antes de ligar o eletro novo</a></h3>
+            <a class="seguir" href="#checklist" data-testid="leitura-2">Continuar lendo</a>
+          </div>
+        </article>
+        <article class="card rv">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1485575301924-6891ef935dcd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxtb3ZpbmclMjB0cnVjayUyMGhpZ2h3YXklMjBkYXJrJTIwbmlnaHQlMjBsb2dpc3RpY3N8ZW58MHx8fHwxNzkyOTg1MzM4fDA&ixlib=rb-4.1.0&q=85" alt="Caminhão de mudança em rodovia ao anoitecer" width="1600" height="800" loading="lazy"></div>
+          <div class="corpo">
+            <h3><a href="#duvidas">Mudança sem susto: como proteger mesa, sofá e geladeira</a></h3>
+            <a class="seguir" href="#duvidas" data-testid="leitura-3">Continuar lendo</a>
+          </div>
+        </article>
+      </div>
+      <p class="nota-leit rv">A leitura mais útil daqui é o <a href="#checklist">checklist da compra</a>, que junta medida, voltagem e garantia num único roteiro de seis passos.</p>
+    </div>
+  </section>
+
+  <!-- ============ POLÍTICAS ============ -->
+  <section id="politicas" class="sec sobre">
+    <div class="wrap">
+      <p class="eyebrow rv">Transparência</p>
+      <h2 class="h2 rv" style="margin-top:22px">Política de privacidade <em>e termos de uso</em></h2>
+      <div class="legal-grid">
+        <article class="legal rv" data-testid="politica-privacidade">
+          <h3>Política de Privacidade</h3>
+          <p>Esta página é mantida pela Fjl Moveis e Transportes Sp LTDA (Fjl Moveis e Transportes Sp), CNPJ 57.165.137/0001-13.</p>
+          <h4>1. Nenhum dado é pedido</h4>
+          <p>O portal não tem formulário, cadastro, login nem área de assinante. A leitura é anônima e aberta.</p>
+          <h4>2. Cookies e medição</h4>
+          <p>O site não grava cookie de rastreamento, não mede audiência e não exibe publicidade. O aviso de cookies é apenas informativo.</p>
+          <h4>3. Contato por e-mail</h4>
+          <p>Quem escreve para a redação fornece apenas o endereço de e-mail e o conteúdo da mensagem. Esses dados são usados unicamente para responder, nos termos da LGPD (Lei nº 13.709/2018), e não são cedidos a terceiros.</p>
+          <h4>4. Encarregado dos dados</h4>
+          <p>Pedidos de acesso, correção ou exclusão: <a href="mailto:mesasbares@outlook.com">mesasbares@outlook.com</a> — Fjl Moveis e Transportes Sp LTDA, Rua Abilio Pedro Ramos, 898, Vila Nilo, São Paulo/SP, CEP 02279-000.</p>
+        </article>
+        <article class="legal rv" data-testid="termos-de-uso">
+          <h3>Termos de Uso</h3>
+          <p>O uso deste portal implica a aceitação das condições abaixo.</p>
+          <h4>1. Finalidade editorial</h4>
+          <p>Todo o conteúdo tem finalidade somente editorial e informativa. Nada aqui vende móvel ou eletrodoméstico, emite orçamento, agenda entrega ou mudança, nem intermedeia negócio com terceiros.</p>
+          <h4>2. Sem prestação de serviço</h4>
+          <p>O portal não executa venda, entrega, montagem, transporte ou assessoria de qualquer natureza. Para compra ou frete, procure uma loja ou transportadora habilitada.</p>
+          <h4>3. Atualização do conteúdo</h4>
+          <p>Preços, prazos e regras citados podem mudar por decisão de lojas, fabricantes e órgãos de defesa do consumidor. Confirme sempre no canal oficial antes de agir.</p>
+          <h4>4. Responsabilidade</h4>
+          <ul>
+            <li>Decisões tomadas com base no texto são de responsabilidade do leitor.</li>
+            <li>Erros apontados são corrigidos com indicação de nova data.</li>
+            <li>Dúvidas sobre estes termos: (35) 99896-8441 ou mesasbares@outlook.com.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section id="contato" class="sec">
+    <div class="wrap">
+      <p class="eyebrow rv">Contato</p>
+      <h2 class="h2 rv" style="margin-top:22px">Onde encontrar <em>a redação</em></h2>
+      <div class="contatos" data-testid="grade-contato">
+        <div class="ficha rv">
+          <h3>E-mail</h3>
+          <p><a href="mailto:mesasbares@outlook.com" data-testid="link-email-contato" style="word-break:break-all">mesasbares@outlook.com</a></p>
+        </div>
+        <div class="ficha rv">
+          <h3>Telefone</h3>
+          <p><a href="tel:+5535998968441" data-testid="link-telefone-contato">(35) 99896-8441</a><br><a href="https://wa.me/5535998968441" target="_blank" rel="noopener" data-testid="link-whatsapp-contato">WhatsApp (35) 99896-8441</a></p>
+        </div>
+        <div class="ficha rv">
+          <h3>Endereço</h3>
+          <p>Rua Abilio Pedro Ramos, 898<br>Vila Nilo<br>São Paulo/SP<br>CEP 02279-000</p>
+        </div>
+        <div class="ficha rv">
+          <h3>Mantenedora</h3>
+          <p>Fjl Moveis e Transportes Sp<br>Fjl Moveis e Transportes Sp LTDA<br>CNPJ 57.165.137/0001-13<br><span style="color:var(--faint);font-size:13px">Correspondência: Fjl Moveis e Transportes Sp LTDA, Rua Abilio Pedro Ramos, 898, Vila Nilo, São Paulo/SP, CEP 02279-000</span></p>
+        </div>
+        <div class="sem-form rv">
+          <p>Não se preenche formulário, não se cria cadastro nem se faz login: o portal não pede dado nenhum ao leitor. Quem quiser apontar um erro ou propor um assunto escreve para o e-mail da redação. Quem procura produto, orçamento ou frete não encontra atendimento por aqui.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ RODAPÉ ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="#abertura" data-testid="logo-rodape">
+        <svg width="30" height="30" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <path d="M32 6 L58 32 L32 58 L6 32 Z" stroke="#D4AF37" stroke-width="2.5"/>
+          <path d="M32 18 L46 32 L32 46 L18 32 Z" stroke="#D4AF37" stroke-width="1" opacity=".4"/>
+          <circle cx="32" cy="32" r="4.5" fill="#D4AF37"/>
+        </svg>
+        <span><span class="nome">mesas<em>&amp;bares</em></span></span>
+      </a>
+      <nav class="foot-nav" data-testid="menu-rodape">
+        <a href="#temas">Temas</a>
+        <a href="#checklist">Checklist</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#politicas">Privacidade e Termos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+    <p class="foot-legal" data-testid="aviso-legal-rodape"><strong>CNPJ 57.165.137/0001-13.</strong> Publicação mantida por empresa privada de representação comercial de eletrodomésticos, móveis e artigos de uso doméstico (CNAE 46.15-0-00), com finalidade somente editorial e informativa. Nada neste portal vende móvel ou eletrodoméstico, emite orçamento, agenda entrega ou mudança, nem intermedeia negócio com terceiros. Mantenedora: Fjl Moveis e Transportes Sp — Fjl Moveis e Transportes Sp LTDA — Rua Abilio Pedro Ramos, 898, Vila Nilo, São Paulo/SP, CEP 02279-000.</p>
+    <div class="copy">
+      <span>© 2026 mesas&amp;bares — publicação editorial independente.</span>
+      <span>Feito em São Paulo, São Paulo.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ AVISO DE COOKIES ============ -->
+<input type="checkbox" id="aviso-ok" class="aviso-chk">
+<div class="aviso" role="region" aria-label="Aviso sobre cookies" data-testid="aviso-cookies">
+  <p>Este aviso é só informativo: o site não grava cookie, não mede audiência e não exibe publicidade. Fechar o aviso não salva nada no navegador, por isso ele pode reaparecer em outra visita. Os detalhes estão na <a href="#politicas">Política de Privacidade</a>.</p>
+  <label for="aviso-ok" data-testid="fechar-aviso-cookies">Fechar aviso</label>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(window.gsap&&window.ScrollTrigger){
+    gsap.registerPlugin(ScrollTrigger);
+    if(!reduce){
+      gsap.utils.toArray(".rv").forEach(function(el,i){
+        gsap.fromTo(el,{opacity:0,y:34},{opacity:1,y:0,duration:1.1,ease:"power3.out",
+          scrollTrigger:{trigger:el,start:"top 88%",once:true},delay:(i%3)*.08});
+      });
+      gsap.utils.toArray("[data-par]").forEach(function(img){
+        var f=parseFloat(img.getAttribute("data-par"))||.1;
+        gsap.fromTo(img,{yPercent:-f*100/2},{yPercent:f*100/2,ease:"none",
+          scrollTrigger:{trigger:img.parentElement,start:"top bottom",end:"bottom top",scrub:true}});
+      });
+      gsap.fromTo(".paisagem",{clipPath:"inset(6% 4% 6% 4% round 6px)"},{clipPath:"inset(0% 0% 0% 0% round 6px)",duration:1.6,ease:"power3.out",delay:.5});
+    }else{
+      gsap.set(".rv",{opacity:1});
+    }
+  }else{
+    document.querySelectorAll(".rv").forEach(function(el){el.style.opacity=1});
+  }
+  var box=document.querySelectorAll("#conferir input");
+  var cnt=document.getElementById("cnt"),bar=document.getElementById("bar");
+  function up(){
+    var n=document.querySelectorAll("#conferir input:checked").length;
+    if(cnt)cnt.textContent=n;
+    if(bar)bar.style.width=(n/box.length*100)+"%";
+  }
+  box.forEach(function(c){c.addEventListener("change",up)});
+})();
+</script>
 </body>
 </html>
